@@ -46,12 +46,6 @@ if __name__ == "__main__":
     cap = cv.VideoCapture(video_path)
 
 
-
-    # Define the codec and create VideoWriter object
-    # video_writer = cv.VideoWriter(
-    #     video_path + "_demo.avi", cv.VideoWriter_fourcc(*"MJPG"), 30, (1280, 720)
-    # )
-
     while cap.isOpened():
         # Read image frame
         ret, frame = cap.read()
@@ -78,9 +72,6 @@ if __name__ == "__main__":
             # Detect motorcycle from image frame
             frame_result = detect_object(frame)
 
-            # Write result to video
-            #  video_writer.write(frame_result)
-
             # Show result
             cv.putText(frame_result,"Apivit-Clicknext-Internship-2025",(700,50),cv.FONT_HERSHEY_SIMPLEX,1,(	(0, 0, 255)),2)
             cv.namedWindow("Video", cv.WINDOW_NORMAL)
@@ -89,9 +80,7 @@ if __name__ == "__main__":
 
         else:
             break
-
-    # Release the VideoCapture object and close the window
-    # video_writer.release()
+            
     cap.release()
     cv.destroyAllWindows()
 
