@@ -13,3 +13,13 @@ Please follow below instruction to complete the tests
 <p align="left">
   <img src="demo.gif" width="640"/>
 </p>
+
+## Result
+
+<p align="left">
+  <img src="Result.gif" width="640"/>
+</p>
+
+
+
+
