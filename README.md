@@ -15,8 +15,11 @@ Please follow below instruction to complete the tests
 </p>
 
 ## Result
-
+This test was the first time using OpenCV, which the developer had never used before, and it took approximately 3 hours to complete. 
+The test focused on opening a video file, reading each frame, detecting cats using the YOLO model, drawing bounding boxes around the objects, 
+and drawing tracking lines to follow the movement of the cats in the video in real-time.
 <p align="left">
+  <img src="Result_pic.png" width="640"/>
   <img src="Result.gif" width="640"/>
 </p>
 
